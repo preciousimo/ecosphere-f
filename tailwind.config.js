@@ -1,9 +1,26 @@
-/** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [],
+  content: [
+    './pages/**/*.{js,ts,jsx,tsx}',
+    './components/**/*.{js,ts,jsx,tsx}',
+  ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: {
+          light: '#3B82F6', // blue-500
+          DEFAULT: '#2563EB', // blue-600
+          dark: '#1D4ED8', // blue-700
+        },
+        secondary: {
+          light: '#FB923C', // orange-400
+          DEFAULT: '#F97316', // orange-500
+          dark: '#EA580C', // orange-600
+        },
+      },
+    },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms'),
+    require('@tailwindcss/typography'),
+  ],
 }
-
