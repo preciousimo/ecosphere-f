@@ -1,14 +1,18 @@
+// pages/_app.tsx
 import '../styles/globals.css';
 import type { AppProps } from 'next/app';
-import { Inter } from '@next/font/google';
+import Layout from '../components/layout/Layout';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 
-const inter = Inter({ subsets: ['latin'] });
+const queryClient = new QueryClient();
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <main className={inter.className}>
-      <Component {...pageProps} />
-    </main>
+    <QueryClientProvider client={queryClient}>
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </QueryClientProvider>
   );
 }
 
