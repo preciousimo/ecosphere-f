@@ -1,10 +1,11 @@
-import React from 'react';
-import Button from '../components/common/Button';
-import Link from 'next/link';
+import React from 'react'
+import Layout from '../components/layout/Layout'
+import Link from 'next/link'
 
-const Home = () => {
+const HomePage: React.FC = () => {
   return (
-    <div className="bg-white shadow overflow-hidden sm:rounded-lg">
+    // <Layout>
+      <div className="bg-white shadow overflow-hidden sm:rounded-lg">
         <div className="px-4 py-5 sm:px-6">
           <h1 className="text-3xl font-bold text-primary-dark">Welcome to EcoSphere</h1>
           <p className="mt-1 max-w-2xl text-sm text-gray-500">
@@ -51,7 +52,8 @@ const Home = () => {
           </dl>
         </div>
       </div>
-  );
-};
+    // </Layout>
+  )
+}
 
-export default Home;
+export default HomePage
