@@ -35,7 +35,7 @@ const HomePage: React.FC = () => {
               <dt className="text-sm font-medium text-gray-500">Energy Dashboard</dt>
               <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
                 Monitor your energy usage and get personalized recommendations in the{' '}
-                <Link href="/dashboard" className="text-primary hover:text-primary-dark">
+                <Link href="/energy-dashboard" className="text-primary hover:text-primary-dark">
                   energy dashboard
                 </Link>.
               </dd>

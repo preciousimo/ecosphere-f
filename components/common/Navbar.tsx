@@ -11,7 +11,7 @@ const Navbar = () => {
     { name: 'Home', href: '/' },
     { name: 'Marketplace', href: '/marketplace' },
     { name: 'Waste Reduction', href: '/waste-reduction' },
-    { name: 'Energy Dashboard', href: '/dashboard' },
+    { name: 'Energy Dashboard', href: '/energy-dashboard' },
     { name: 'Community', href: '/community' },
   ]
 
