@@ -26,7 +26,7 @@ const HomePage: React.FC = () => {
               <dt className="text-sm font-medium text-gray-500">Waste Reduction</dt>
               <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
                 Learn how to reduce waste and find local recycling centers in the{' '}
-                <Link href="/wastereduction" className="text-primary hover:text-primary-dark">
+                <Link href="/waste-reduction" className="text-primary hover:text-primary-dark">
                   waste reduction section
                 </Link>.
               </dd>

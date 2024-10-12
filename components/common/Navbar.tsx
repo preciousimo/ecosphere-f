@@ -10,7 +10,7 @@ const Navbar = () => {
   const navItems = [
     { name: 'Home', href: '/' },
     { name: 'Marketplace', href: '/marketplace' },
-    { name: 'Waste Reduction', href: '/wastereduction' },
+    { name: 'Waste Reduction', href: '/waste-reduction' },
     { name: 'Energy Dashboard', href: '/dashboard' },
     { name: 'Community', href: '/community' },
   ]
